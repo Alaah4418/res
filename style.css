@@ -1,0 +1,186 @@
+:root {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+html {
+    font-family: 'Barlow Semi Condensed', sans-serif; 
+}
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--Light-grayish-blue);
+    font-size: 13px;
+    font-weight: 500, 600;
+}
+@media (min-width: 1200px) {
+    .main {
+        margin-bottom: 20px;
+        padding: 5rem;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 'card1 card1 card2 card5'
+                             'card3 card4 card4 card5'
+    }
+
+    .card1 {
+        margin-bottom:10px;
+        padding: 3rem;
+        height: 270;
+        width: 540;
+        background-image: url("images/bg-pattern-quotation.svg")  no-repeat ;
+        background-position: 250px 5px; 
+    }
+
+    .card2 {
+    margin-bottom:10px;
+        padding: 3rem;
+        height: 250;
+        width: 540;
+    }
+
+    .card3 {
+    margin-bottom:10px;
+        padding: 3rem;
+        height: 250;
+        width: 540;
+    }
+
+    .card4 {
+        margin-bottom:10px;
+        padding: 3rem;
+        height: 270;
+        width: 540;
+    }
+
+    .card4 {
+        margin-bottom:10px;
+        padding: 3rem;
+        height: 270;
+        width: 540;
+    }
+
+}
+
+@media screen and (min-width: 378px) {
+
+    .card1 {
+        margin-bottom:10px;
+        padding: 3rem;
+        height: 260;
+        width: 350;
+        background-image: url("images/bg-pattern-quotation.svg")  no-repeat ;
+        background-position: 450px 5px; 
+    }
+
+    .card2 {
+        margin-bottom:10px;
+        padding: 3rem;
+        height: 240;
+        width: 350;
+    }
+
+    .card3 {
+        margin-bottom:10px;
+        padding: 3rem;
+        height: 240;
+        width: 350;
+    }
+
+    .card4 {
+        margin-bottom:10px;
+        padding: 3rem;
+        height: 260;
+        width: 350;
+    }
+
+    .card4 {
+        margin-bottom:10px;
+        padding: 3rem;
+        height: 260;
+        width: 350;
+    }
+   
+}
+
+.card1 {
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 450px 5px;
+    background-color: var(--Moderate-violet);
+    padding: 2rem;
+    color: var(--White);
+    border-radius: 10px;
+    grid-area: card1;
+}
+
+.card-user-img {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid var(--Light-grayish-blue);
+    margin-right: 1rem;
+}
+
+.card-name-img {
+    display: flex;
+    align-items: center;
+    margin-button:10px;
+    justify-content: baseline;
+    font-size: 16px;
+}
+
+.card-name-img .user-verified {
+    opacity: 50%;
+    font-size: 13px;
+}
+
+.card-review p {
+    color: var(--gray);
+    opacity: 70%;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.5rem;
+    padding-top: 10px;
+}
+
+.card2 {
+    background-color: var(--Very-dark-blackish-blue);
+    padding: 2rem;
+    color: var(--White);
+    border-radius: 10px;
+    grid-area: card2;
+}
+
+.card3 {
+    background-color: var(--White);
+    padding: 2rem;
+    color: var(--Very-dark-blackish-blue);
+    border-radius: 10px;
+    grid-area: card3;
+}
+
+.card4 {
+    background-color: black;
+    padding: 2rem;
+    color: var(--White);
+    border-radius: 10px;
+    grid-area: card4;
+
+}
+
+.card5 {
+    background-color: var(--White);
+    padding: 2rem;
+    color: var(--Very-dark-blackish-blue);
+    border-radius: 10px;
+    grid-area: card5;
+}
